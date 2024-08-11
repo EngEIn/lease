@@ -1,8 +1,8 @@
 package com.engein.lease.model.entity;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import com.atguigu.lease.model.enums.LeaseSourceType;
-import com.atguigu.lease.model.enums.LeaseStatus;
+import com.engein.lease.model.enums.LeaseSourceType;
+import com.engein.lease.model.enums.LeaseStatus;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;

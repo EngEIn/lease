@@ -1,7 +1,12 @@
 package com.engein.lease.web.admin.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.engein.lease.model.entity.ApartmentInfo;
+import com.engein.lease.web.admin.vo.apartment.ApartmentDetailVo;
+import com.engein.lease.web.admin.vo.apartment.ApartmentItemVo;
+import com.engein.lease.web.admin.vo.apartment.ApartmentQueryVo;
+import com.engein.lease.web.admin.vo.apartment.ApartmentSubmitVo;
 
 /**
 * @author liubo
@@ -10,4 +15,11 @@ import com.engein.lease.model.entity.ApartmentInfo;
 */
 public interface ApartmentInfoService extends IService<ApartmentInfo> {
 
+    void saveOrUpdateApartment(ApartmentSubmitVo apartmentSubmitVo);
+
+    IPage<ApartmentItemVo> pageApartmentItemByQuery(IPage<ApartmentItemVo> page, ApartmentQueryVo queryVo);
+
+    ApartmentDetailVo getApartmentDetailById(Long id);
+
+    void removeApartmentById(Long id);
 }

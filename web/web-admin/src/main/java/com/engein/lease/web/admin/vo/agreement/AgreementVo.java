@@ -1,6 +1,6 @@
 package com.engein.lease.web.admin.vo.agreement;
 
-import com.engein.lease.entity.*;
+import com.engein.lease.model.entity.*;
 import com.engein.lease.model.entity.*;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

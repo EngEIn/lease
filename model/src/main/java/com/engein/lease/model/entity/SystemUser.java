@@ -1,7 +1,7 @@
 package com.engein.lease.model.entity;
 
-import com.atguigu.lease.model.enums.BaseStatus;
-import com.atguigu.lease.model.enums.SystemUserType;
+import com.engein.lease.model.enums.BaseStatus;
+import com.engein.lease.model.enums.SystemUserType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.v3.oas.annotations.media.Schema;

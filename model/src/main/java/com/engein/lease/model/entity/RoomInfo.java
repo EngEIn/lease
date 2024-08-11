@@ -1,6 +1,6 @@
 package com.engein.lease.model.entity;
 
-import com.atguigu.lease.model.enums.ReleaseStatus;
+import com.engein.lease.model.enums.ReleaseStatus;
 import io.swagger.v3.oas.annotations.media.Schema;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;

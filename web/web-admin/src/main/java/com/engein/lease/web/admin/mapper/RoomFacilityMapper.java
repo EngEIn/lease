@@ -2,6 +2,8 @@ package com.engein.lease.web.admin.mapper;
 
 import com.engein.lease.model.entity.RoomFacility;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import io.swagger.v3.oas.annotations.media.Schema;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
 * @author liubo
@@ -9,6 +11,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2023-07-24 15:48:00
 * @Entity com.atguigu.lease.model.RoomFacility
 */
+@Mapper
 public interface RoomFacilityMapper extends BaseMapper<RoomFacility> {
 
 }

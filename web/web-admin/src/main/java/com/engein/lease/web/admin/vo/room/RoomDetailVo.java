@@ -1,6 +1,5 @@
 package com.engein.lease.web.admin.vo.room;
 
-import com.engein.lease.entity.*;
 import com.engein.lease.model.entity.*;
 import com.engein.lease.web.admin.vo.attr.AttrValueVo;
 import com.engein.lease.web.admin.vo.graph.GraphVo;

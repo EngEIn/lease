@@ -2,6 +2,9 @@ package com.engein.lease.web.admin.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.engein.lease.model.entity.AttrKey;
+import com.engein.lease.web.admin.vo.attr.AttrKeyVo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -10,4 +13,5 @@ import com.engein.lease.model.entity.AttrKey;
 */
 public interface AttrKeyService extends IService<AttrKey> {
 
+    List<AttrKeyVo> listAttrInfo();
 }

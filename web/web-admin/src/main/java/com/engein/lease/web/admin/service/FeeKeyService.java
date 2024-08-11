@@ -2,6 +2,9 @@ package com.engein.lease.web.admin.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.engein.lease.model.entity.FeeKey;
+import com.engein.lease.web.admin.vo.fee.FeeKeyVo;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -10,4 +13,5 @@ import com.engein.lease.model.entity.FeeKey;
 */
 public interface FeeKeyService extends IService<FeeKey> {
 
+    List<FeeKeyVo> listFeeInfo();
 }

@@ -2,6 +2,7 @@ package com.engein.lease.web.admin.mapper;
 
 import com.engein.lease.model.entity.RoomLabel;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
 * @author liubo
@@ -9,6 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2023-07-24 15:48:00
 * @Entity com.atguigu.lease.model.RoomLabel
 */
+@Mapper
 public interface RoomLabelMapper extends BaseMapper<RoomLabel> {
 
 }
