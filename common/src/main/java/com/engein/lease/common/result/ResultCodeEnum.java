@@ -21,15 +21,15 @@ public enum ResultCodeEnum {
     ADMIN_CAPTCHA_CODE_ERROR(302, "验证码错误"),
     ADMIN_CAPTCHA_CODE_EXPIRED(303, "验证码已过期"),
     ADMIN_CAPTCHA_CODE_NOT_FOUND(304, "未输入验证码"),
-
-
     ADMIN_LOGIN_AUTH(305, "未登陆"),
+
     ADMIN_ACCOUNT_NOT_EXIST_ERROR(306, "账号不存在"),
     ADMIN_ACCOUNT_ERROR(307, "用户名或密码错误"),
     ADMIN_ACCOUNT_DISABLED_ERROR(308, "该用户已被禁用"),
     ADMIN_ACCESS_FORBIDDEN(309, "无访问权限"),
+    ADMIN_FILE_UPLOAD_FAILED(310,"文件删除失败"),
 
-    ADMIN_APARTMENT_DELETE_ERROR(310,"删除错误"),
+    ADMIN_APARTMENT_DELETE_ERROR(311,"房间删除错误"),
 
     APP_LOGIN_AUTH(501, "未登陆"),
     APP_LOGIN_PHONE_EMPTY(502, "手机号码为空"),

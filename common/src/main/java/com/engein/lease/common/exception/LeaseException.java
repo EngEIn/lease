@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Data
 public class LeaseException extends RuntimeException {
+
     //异常状态码
     private Integer code;
 
