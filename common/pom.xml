@@ -46,5 +46,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--密码 md5 加密-->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+
     </dependencies>
 </project>
