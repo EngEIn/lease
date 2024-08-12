@@ -13,7 +13,6 @@ import java.util.List;
 * @createDate 2023-07-24 15:48:00
 * @Entity com.atguigu.lease.model.FeeKey
 */
-@Mapper
 public interface FeeKeyMapper extends BaseMapper<FeeKey> {
 
     List<FeeKeyVo> listFeeInfo();

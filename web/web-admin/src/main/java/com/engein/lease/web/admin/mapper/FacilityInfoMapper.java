@@ -12,7 +12,6 @@ import java.util.List;
 * @createDate 2023-07-24 15:48:00
 * @Entity com.atguigu.lease.model.FacilityInfo
 */
-@Mapper
 public interface FacilityInfoMapper extends BaseMapper<FacilityInfo> {
 
     List<FacilityInfo> selectListByApartmentId(Long id);

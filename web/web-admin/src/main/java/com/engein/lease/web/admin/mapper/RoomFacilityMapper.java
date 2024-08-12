@@ -11,7 +11,6 @@ import org.apache.ibatis.annotations.Mapper;
 * @createDate 2023-07-24 15:48:00
 * @Entity com.atguigu.lease.model.RoomFacility
 */
-@Mapper
 public interface RoomFacilityMapper extends BaseMapper<RoomFacility> {
 
 }

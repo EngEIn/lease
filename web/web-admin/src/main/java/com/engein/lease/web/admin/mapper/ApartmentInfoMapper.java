@@ -15,7 +15,6 @@ import org.apache.ibatis.annotations.Mapper;
 * @createDate 2023-07-24 15:48:00
 * @Entity com.atguigu.lease.model.ApartmentInfo
 */
-@Mapper
 public interface ApartmentInfoMapper extends BaseMapper<ApartmentInfo> {
 
     IPage<ApartmentItemVo> pageApartmentItemByQuery(IPage<ApartmentItemVo> page, ApartmentQueryVo queryVo);

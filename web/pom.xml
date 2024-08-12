@@ -58,6 +58,7 @@
 
     <!-- Spring Boot Maven插件，用于打包可执行的JAR文件 -->
     <build>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

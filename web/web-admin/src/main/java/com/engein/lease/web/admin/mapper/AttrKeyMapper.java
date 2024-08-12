@@ -13,7 +13,6 @@ import java.util.List;
 * @createDate 2023-07-24 15:48:00
 * @Entity com.atguigu.lease.model.AttrKey
 */
-@Mapper
 public interface AttrKeyMapper extends BaseMapper<AttrKey> {
 
     List<AttrKeyVo> listAttrInfo();

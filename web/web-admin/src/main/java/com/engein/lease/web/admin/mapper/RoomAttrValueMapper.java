@@ -10,7 +10,6 @@ import org.apache.ibatis.annotations.Mapper;
 * @createDate 2023-07-24 15:48:00
 * @Entity com.atguigu.lease.model.RoomAttrValue
 */
-@Mapper
 public interface RoomAttrValueMapper extends BaseMapper<RoomAttrValue> {
 
 }

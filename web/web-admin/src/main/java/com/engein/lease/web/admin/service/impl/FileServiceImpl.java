@@ -25,7 +25,7 @@ public class FileServiceImpl implements FileService {
     private MinioClient minioClient;
 
     @Override
-    public String upload(MultipartFile file) throws ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
+    public String upload(MultipartFile file) throws IOException, ServerException, InsufficientDataException, ErrorResponseException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
 
         boolean bucketExists = minioClient.bucketExists(
                 BucketExistsArgs.builder()
