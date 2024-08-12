@@ -24,9 +24,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author liubo
+ * @author engein
  * @description 针对表【apartment_info(公寓信息表)】的数据库操作Service实现
- * @createDate 2023-07-24 15:48:00
+ * @createDate 2024-08-10 15:48:00
  */
 @Service
 public class ApartmentInfoServiceImpl extends ServiceImpl<ApartmentInfoMapper, ApartmentInfo>

@@ -7,9 +7,9 @@ import com.engein.lease.web.admin.mapper.ProvinceInfoMapper;
 import org.springframework.stereotype.Service;
 
 /**
-* @author liubo
+* @author engein
 * @description 针对表【province_info】的数据库操作Service实现
-* @createDate 2023-07-24 15:48:00
+* @createDate 2024-08-10 15:48:00
 */
 @Service
 public class ProvinceInfoServiceImpl extends ServiceImpl<ProvinceInfoMapper, ProvinceInfo>

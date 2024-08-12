@@ -8,10 +8,10 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
-* @author liubo
+* @author engein
 * @description 针对表【system_user(员工信息表)】的数据库操作Mapper
-* @createDate 2023-07-24 15:48:00
-* @Entity com.atguigu.lease.model.SystemUser
+* @createDate 2024-08-10 15:48:00
+* @Entity com.engein.lease.model.SystemUser
 */
 public interface SystemUserMapper extends BaseMapper<SystemUser> {
 
