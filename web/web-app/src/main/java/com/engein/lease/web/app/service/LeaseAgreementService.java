@@ -2,6 +2,10 @@ package com.engein.lease.web.app.service;
 
 import com.engein.lease.model.entity.LeaseAgreement;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.engein.lease.web.app.vo.agreement.AgreementDetailVo;
+import com.engein.lease.web.app.vo.agreement.AgreementItemVo;
+
+import java.util.List;
 
 /**
 * @author engein
@@ -9,4 +13,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 * @createDate 2023-07-26 11:12:39
 */
 public interface LeaseAgreementService extends IService<LeaseAgreement> {
+
+    List<AgreementItemVo> listItemByPhone(String phone);
+
+    AgreementDetailVo getDetailById(Long id);
+
 }

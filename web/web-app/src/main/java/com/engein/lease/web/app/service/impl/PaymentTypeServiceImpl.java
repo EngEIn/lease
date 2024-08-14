@@ -4,7 +4,10 @@ import com.engein.lease.model.entity.PaymentType;
 import com.engein.lease.web.app.mapper.PaymentTypeMapper;
 import com.engein.lease.web.app.service.PaymentTypeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
 * @author engein
@@ -15,6 +18,13 @@ import org.springframework.stereotype.Service;
 public class PaymentTypeServiceImpl extends ServiceImpl<PaymentTypeMapper, PaymentType>
     implements PaymentTypeService{
 
+    @Autowired
+    private PaymentTypeMapper paymentTypeMapper;
+
+    @Override
+    public List<PaymentType> listByRoomId(Long id) {
+        return paymentTypeMapper.selectListByRoomId(id);
+    }
 }
 
 
