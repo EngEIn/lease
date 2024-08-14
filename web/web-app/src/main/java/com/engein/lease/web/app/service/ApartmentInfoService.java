@@ -2,6 +2,7 @@ package com.engein.lease.web.app.service;
 
 import com.engein.lease.model.entity.ApartmentInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.engein.lease.web.app.vo.apartment.ApartmentItemVo;
 
 /**
  * @author engein
@@ -9,4 +10,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @createDate 2023-07-26 11:12:39
  */
 public interface ApartmentInfoService extends IService<ApartmentInfo> {
+
+    ApartmentItemVo selectApartmentItemVoById(Long id);
+
 }
