@@ -1,10 +1,12 @@
 package com.engein.lease.web.app.service.impl;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.engein.lease.common.login.LoginUserHolder;
 import com.engein.lease.model.entity.*;
 import com.engein.lease.model.enums.ItemType;
 import com.engein.lease.web.app.mapper.*;
 import com.engein.lease.web.app.service.ApartmentInfoService;
+import com.engein.lease.web.app.service.BrowsingHistoryService;
 import com.engein.lease.web.app.service.RoomInfoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.engein.lease.web.app.vo.apartment.ApartmentItemVo;
@@ -58,6 +60,11 @@ public class RoomInfoServiceImpl extends ServiceImpl<RoomInfoMapper, RoomInfo>
     @Autowired
     private ApartmentInfoService apartmentInfoService;
 
+    @Autowired
+    private BrowsingHistoryService browsingHistoryService;
+
+
+
     @Override
     public IPage<RoomItemVo> pageRoomItemByQuery(IPage<RoomItemVo> page, RoomQueryVo queryVo) {
         return roomInfoMapper.pageRoomItemByQuery(page, queryVo);
@@ -98,7 +105,7 @@ public class RoomInfoServiceImpl extends ServiceImpl<RoomInfoMapper, RoomInfo>
         roomDetailVo.setPaymentTypeList(paymentTypeList);
         roomDetailVo.setFeeValueVoList(feeValueVoList);
         roomDetailVo.setLeaseTermList(leaseTermList);
-
+        browsingHistoryService.saveHistory(LoginUserHolder.getLoginUser().getUserId(), id);
         return roomDetailVo;
     }
 
