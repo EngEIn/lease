@@ -2,6 +2,12 @@ server:
   port: 8081
 
 spring:
+  data:
+    redis:
+      host: 192.168.85.129
+      port: 6379
+      database: 0
+
   jackson:
     time-zone: GMT+8
   datasource:
@@ -27,3 +33,9 @@ mybatis-plus:
 
 springdoc:
   default-flat-param-object: true
+
+aliyun:
+  sms:
+    access-key-id: LTAI5tA3E1Pkan77iNhVp4Bz
+    access-key-secret: sQdOIBvLELmrMzeeRtfpkqRI3szV30
+    endpoint: dysmsapi.aliyuncs.com
